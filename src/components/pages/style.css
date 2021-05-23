@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Padauk&display=swap");
+.services {
+  background-color: #3f3f3f;
+  color: white;
+  margin: 0;
+}
+
+.uppersec {
+  padding: 40px 50px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Padauk", sans-serif;
+}
+
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-row-gap: 30px;
+  grid-column-gap: 100px;
+  padding: 24px 10px;
+}
+
+.service {
+  padding: 60px 10px 10px 10px;
+  border-radius: 10px;
+  background-color: #1a1a1d;
+  box-shadow: 0 8px 24px 0 #00000081;
+  color: white;
+  height: 500px;
+}
+
+.service > button {
+  background-color: #1a1a1d;
+  color: white;
+  border: 3px solid #c3073f;
+  border-radius: 20px;
+  padding: 5px 40px;
+}
+.service > button:hover {
+  background-color: #c3073f;
+  color: white;
+  border: 3px solid #c3073f;
+}
+.service > h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #c3073f;
+}
+.service > img {
+  width: 200px;
+}
+.service > p {
+  padding: 15px 0px 15px 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .service-container {
+    grid-template-columns: 70%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+
+  .service {
+    padding: 10px;
+    height: 450px;
+  }
+}
